@@ -1,0 +1,14 @@
+
+body{
+    
+    margin:0;
+}
+.btn-primary{
+    display: flex;
+    margin-left: 600px;
+    
+
+}
+.form-control{
+    background-color: lightgray;
+}

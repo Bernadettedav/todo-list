@@ -1,0 +1,19 @@
+<body>
+  <div >
+    <h3>Do it now!</h3>
+    <input type="text" id="myInput" placeholder="Enter to do" class="form-control" #addItem  />
+    <button type="button" class="btn btn-primary btn-lg" (click)= "getItems(addItem.value)" >Add</button>
+</div>
+  <div class="list-group" > 
+    <li  *ngFor= "let myList of list; let i=index" class= "list-group-info" >
+    
+      {{i+1}}: {{myList}}
+      
+     
+      <button class="btn btn-danger btn-sm" (click)="onRemoved(i)">Remove</button>
+      <hr>
+    </li>
+  </div>
+</body>
+
+  
